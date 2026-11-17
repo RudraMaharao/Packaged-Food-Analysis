@@ -95,14 +95,14 @@ These captures show the saved Power BI report at the full-snapshot filter state.
 <a id="page1"></a>
 ### Page 1 · Overview
 
-![Overview page with KPI cards, food-group chart, ratings donut, and product table](screenshots/page1_overview.jpg)
+![Overview page with KPI cards, food-group chart, ratings donut, and product table](screenshots/1.png)
 
 <a id="page2"></a>
 ### Page 2 · Label data gaps
 
-![Label data gaps page with coverage cards, availability donut, and drink-versus-solid comparison](screenshots/page2_data_gaps.jpg)
+![Label data gaps page with coverage cards, availability donut, and drink-versus-solid comparison](screenshots/2.png)
 
 <a id="page3"></a>
 ### Page 3 · Read the label
 
-![Read the label page with screening cards, outcomes donut, food-form comparison, and awareness note](screenshots/page3_read_the_label.jpg)
+![Read the label page with screening cards, outcomes donut, food-form comparison, and awareness note](screenshots/3.png)
