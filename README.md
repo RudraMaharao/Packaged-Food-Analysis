@@ -72,7 +72,7 @@ Energy is converted from kJ only when kcal is absent; salt is derived from sodiu
 
 ## Live Power BI report
 
-[Open the three-page interactive report](https://app.powerbi.com/groups/me/reports/81154722-4843-4b7f-8450-4bd92a2afa2c/a87cf5130da9a7606572?experience=power-bi) in the owner's Power BI workspace. It uses the Frontier theme and a `Products` semantic model populated by `power_query.m`. The report is private to the Power BI account unless its owner shares it.
+[Open the three-page interactive report](https://app.powerbi.com/groups/me/reports/81154722-4843-4b7f-8450-4bd92a2afa2c/a87cf5130da9a7606572?experience=power-bi) in the owner's Power BI workspace. It uses a `Products` semantic model populated by `power_query.m`. The report is private to the Power BI account unless its owner shares it.
 
 | Page | Main visuals and interaction |
 |---|---|
@@ -90,19 +90,19 @@ Data: Open Food Facts contributors, ODbL 1.0, via PackSense's India snapshot. Th
 
 ## Power BI page screenshots
 
-The three images will be added after the final report capture.
+These captures show the saved Power BI report at the full-snapshot filter state. The live report supports food-group slicers and cross-filtering.
 
 <a id="page1"></a>
 ### Page 1 · Overview
 
-_Screenshot placeholder: `screenshots/page1_overview.png`_
+![Overview page with KPI cards, food-group chart, ratings donut, and product table](screenshots/page1_overview.jpg)
 
 <a id="page2"></a>
 ### Page 2 · Label data gaps
 
-_Screenshot placeholder: `screenshots/page2_data_gaps.png`_
+![Label data gaps page with coverage cards, availability donut, and drink-versus-solid comparison](screenshots/page2_data_gaps.jpg)
 
 <a id="page3"></a>
 ### Page 3 · Read the label
 
-_Screenshot placeholder: `screenshots/page3_read_the_label.png`_
+![Read the label page with screening cards, outcomes donut, food-form comparison, and awareness note](screenshots/page3_read_the_label.jpg)
