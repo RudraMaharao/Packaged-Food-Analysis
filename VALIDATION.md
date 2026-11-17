@@ -14,7 +14,7 @@ The local build and `verify.py` passed against MongoDB. A Power BI DAX query ind
 
 Source SHA-256: `9007b7a48fe9bc129e6a90a6fc7dfb4dfdcb6a72f53b3a3aabc74eda0d5d1951`.
 
-Checks cover all 25,209 unique barcodes, source/export row parity, screen eligibility and flag invariants, MongoDB collection counts, and the `quality_overview` aggregate. A 78% usable-record claim does not reproduce for this snapshot; the verified raw share is **41.2%**. The screen is a consumer awareness proxy and does not establish legal HFSS compliance.
+Checks cover all 25,209 unique barcodes, source/export row parity, screen eligibility and flag invariants, MongoDB collection counts, and the `quality_overview` aggregate. The verified raw usable share is **41.2%**. The screen is a consumer awareness proxy and does not establish legal HFSS compliance.
 
 The DAX check used:
 

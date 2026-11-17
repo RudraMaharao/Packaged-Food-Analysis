@@ -14,7 +14,7 @@ Reproducible analysis of **25,209 India-tagged products** from the Open Food Fac
 | Eligible for the four-input HFSS proxy screen | 6,455 | 25.6% |
 | Flagged among eligible products | 6,185 | 95.8% of eligible |
 
-**The proposed 78% usability claim is not supported by this snapshot.** Missing nutrition values were not invented or filled with category averages. The source includes non-food and incomplete records, so this is a catalogue analysis, not a census of Indian packaged foods.
+Missing nutrition values were not invented or filled with category averages. The source includes non-food and incomplete records, so this is a catalogue analysis, not a census of Indian packaged foods.
 
 ## Run locally
 
@@ -50,8 +50,8 @@ Energy is converted from kJ only when kcal is absent; salt is derived from sodiu
 
 | Page | Main visuals and interaction |
 |---|---|
-| 01 Overview | Product, raw-usable, and proxy-screen-eligible cards; food-group bar chart; NutriScore distribution; product-level nutrition table; food-group slicer. |
-| 02 Data Quality | Normalized-usable count and raw-usable-share cards; usable vs unavailable donut; exact count table; food-group slicer; interpretation note. |
+| 01 Overview | Product, nutrition-data, and screenable-product cards; food-group bar chart; Nutri-Score distribution; product-level nutrition table; food-group slicer. |
+| 02 Label Data Gaps | Validated-product count and nutrition-data-coverage cards; availability donut; exact count table; drink-versus-solid comparison; food-group slicer. |
 | 03 Read the Label | Screened-products and flagged-share cards; outcome donut, exact count table, solid-food/drink comparison; food-group slicer; consumer-awareness note. |
 
 The report's installed DAX measures are `Total Products`, `Raw Usable Products`, `Raw Usable Share`, `Normalized Usable Products`, `Screen Eligible Products`, `Flagged Products`, `Within Proxy Thresholds`, `Insufficient Data Products`, and `Flagged Share of Eligible`. `measures.dax` also includes optional measures for extending the report. The title and subtitle text, full-snapshot notes, and count tables should be read together when filtering: static explanatory counts refer to all 25,209 source rows.
