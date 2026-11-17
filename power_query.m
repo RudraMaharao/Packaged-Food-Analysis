@@ -1,0 +1,28 @@
+let
+    Source = Csv.Document(Web.Contents("https://huggingface.co/datasets/PackSense/packsense-india/resolve/main/india_products.csv"), [Delimiter=",", Columns=36, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    ToNum = (x as any) as nullable number => try Number.FromText(Text.From(x)) otherwise null,
+    NumericColumns = {"energy_kj", "energy_kcal", "fat", "saturated_fat", "carbohydrates", "sugars", "fiber", "proteins", "salt", "sodium", "nova_group", "open_error_flags", "open_warning_flags"},
+    RawUsableInput = Table.AddColumn(Headers, "raw_usable", each [product_name] <> null and Text.Trim([product_name]) <> "" and List.Count(List.Select({[energy_kcal], [fat], [sugars], [salt], [proteins], [fiber]}, (v) => v <> null and Text.Trim(Text.From(v)) <> "")) >= 3, type logical),
+    Typed = Table.TransformColumns(RawUsableInput, List.Transform(NumericColumns, each {_, ToNum, type nullable number})),
+    NonNegative = Table.TransformColumns(Typed, List.Transform(NumericColumns, each {_, (x) => if x <> null and x < 0 then null else x, type nullable number})),
+    NutrientColumns = {"fat", "saturated_fat", "carbohydrates", "sugars", "fiber", "proteins", "salt", "sodium"},
+    Guarded = Table.TransformColumns(NonNegative, List.Transform(NutrientColumns, each {_, (x) => if x <> null and x > 100 then null else x, type nullable number})),
+    Named = Table.TransformColumns(Guarded, {{"product_name", each if _ = null or Text.Trim(_) = "" then "Unnamed product" else Text.Trim(_), type text}, {"brands", each if _ = null or Text.Trim(_) = "" then "Unknown" else Text.Trim(Text.BeforeDelimiter(_ & ",", ",")), type text}}),
+    Category = Table.AddColumn(Named, "category", each let group = if [pnns_groups_2] = null then "" else Text.Trim([pnns_groups_2]), tags = if [categories_tags] = null then {} else Text.Split([categories_tags], "|"), specific = List.Select(tags, (t) => t <> "" and not List.Contains({"en:foods", "en:snacks", "en:beverages", "en:plant-based-foods-and-beverages"}, t)) in if group <> "" and Text.Lower(group) <> "unknown" then group else if List.Count(specific) > 0 then Text.Proper(Text.Replace(Text.AfterDelimiter(List.Last(specific), ":"), "-", " ")) else "Unclassified", type text),
+    Beverage = Table.AddColumn(Category, "is_beverage", each List.Contains({"beverages", "alcoholic beverages"}, Text.Lower(if [pnns_groups_1] = null then "" else [pnns_groups_1])) or Text.Contains(if [categories_tags] = null then "" else [categories_tags], "en:beverages"), type logical),
+    Energy = Table.AddColumn(Beverage, "energy_kcal_clean", each let e = if [energy_kcal] <> null then [energy_kcal] else if [energy_kj] <> null then [energy_kj] / 4.184 else null in if e <> null and e > 900 then null else e, type nullable number),
+    Salt = Table.AddColumn(Energy, "salt_g", each let s = if [salt] <> null then [salt] else if [sodium] <> null then [sodium] * 2.5 else null in if s <> null and s > 100 then null else s, type nullable number),
+    Fields = Table.AddColumn(Salt, "nutrition_fields_present", each List.NonNullCount({[energy_kcal_clean], [fat], [sugars], [salt_g], [proteins], [fiber]}), Int64.Type),
+    RawUsable = Fields,
+    NormalizedUsable = Table.AddColumn(RawUsable, "normalized_usable", each [product_name] <> "Unnamed product" and [nutrition_fields_present] >= 3, type logical),
+    Eligible = Table.AddColumn(NormalizedUsable, "hfss_screen_eligible", each [product_name] <> "Unnamed product" and List.Contains({"100g", "100ml"}, Text.Lower(if [nutrition_per] = null then "" else [nutrition_per])) and Text.Lower(if [nutrition_preparation] = null then "" else [nutrition_preparation]) = "as_sold" and List.NonNullCount({[energy_kcal_clean], [fat], [sugars], [salt_g]}) = 4, type logical),
+    HighEnergy = Table.AddColumn(Eligible, "high_energy", each [hfss_screen_eligible] and [energy_kcal_clean] > (if [is_beverage] then 70 else 250), type logical),
+    HighFat = Table.AddColumn(HighEnergy, "high_fat_proxy", each [hfss_screen_eligible] and [fat] > (if [is_beverage] then 1.5 else 4.2), type logical),
+    HighSugar = Table.AddColumn(HighFat, "high_sugar_proxy", each [hfss_screen_eligible] and [sugars] > (if [is_beverage] then 2 else 3), type logical),
+    HighSalt = Table.AddColumn(HighSugar, "high_salt", each [hfss_screen_eligible] and [salt_g] > (if [is_beverage] then 0.175 else 0.625), type logical),
+    Screen = Table.AddColumn(HighSalt, "hfss_screen_status", each if not [hfss_screen_eligible] then "Insufficient data" else if [high_energy] or [high_fat_proxy] or [high_sugar_proxy] or [high_salt] then "Flagged" else "Within proxy thresholds", type text),
+    Quality = Table.AddColumn(Screen, "quality_flags", each (if [open_error_flags] = null then 0 else [open_error_flags]) + (if [open_warning_flags] = null then 0 else [open_warning_flags]), type number),
+    Output = Table.SelectColumns(Quality, {"code", "product_name", "brands", "category", "pnns_groups_1", "is_beverage", "nutrition_per", "energy_kcal_clean", "fat", "saturated_fat", "sugars", "salt_g", "proteins", "fiber", "nutriscore_grade", "nova_group", "nutrition_fields_present", "raw_usable", "normalized_usable", "hfss_screen_eligible", "hfss_screen_status", "high_energy", "high_fat_proxy", "high_sugar_proxy", "high_salt", "quality_flags"})
+in
+    Output

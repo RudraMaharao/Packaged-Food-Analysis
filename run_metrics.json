@@ -1,0 +1,20 @@
+{
+  "source_rows": 25209,
+  "raw_usable": 10391,
+  "normalized_usable": 10388,
+  "hfss_screen_eligible": 6455,
+  "hfss_flagged": 6185,
+  "nutrition_missing": 14015,
+  "mongo_database": "indian_packaged_food_nutrition",
+  "aggregation_rows": {
+    "quality_overview": 1,
+    "category_profile": 59,
+    "brand_scorecard": 122,
+    "hfss_drivers": 4,
+    "nutriscore_screen": 20,
+    "review_queue": 100
+  },
+  "raw_usable_pct": 41.2,
+  "normalized_usable_pct": 41.2,
+  "hfss_eligible_pct": 25.6
+}

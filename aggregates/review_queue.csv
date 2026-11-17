@@ -1,0 +1,101 @@
+﻿code,product_name,brand,category,energy_kcal,fat_g,sugars_g,salt_g,high_energy,high_fat_proxy,high_sugar_proxy,high_salt,quality_flags
+0690225309363,Uplife Gut Pro Multi source edible oil,India Gate,Oil,900.0,100.0,0.0,0.0,True,True,False,False,4
+3336590080045,Huile D'olive  Vierge extra,Cauvin,Fats,900.0,100.0,0.0,0.0,True,True,False,False,7
+5949998832178,Aksharveda ghee,Aksharveda,Fats,900.0,99.9,0.0,0.005,True,True,False,False,4
+7904417654470,Patanjali kacchi Ghani 1ltr,Unknown,Unclassified,900.0,99.9,0.0,0.0098,True,True,False,False,4
+8410125600467,Figaro,Unknown,Oil,900.0,99.9,0.0,0.0063,True,True,False,False,4
+8901088000345,Coconut oil,Parachute,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901088000451,Parachnute 100% Pure Coconut Oil,Parachute,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901088000468,Coconut oil,Parachute,Fruits,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901088000994,Saffola testy + oil 5lt,Unknown,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,4
+8901088002530,Tasty+,Saffola,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,7
+8901088017411,Saffola gold Blended oil 5 l,Saffola,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,7
+8901088034616,Saffola active,Unknown,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,5
+8901088047142,parachute oil,parachute,Fruits,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901088055802,100% pure coconut oil,MARICO LTD.,Fruits,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901207038334,Anmol Gold Coconut Oil,Dabur,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901248270212,Emami Healthy & Tasty Refined Sunflower Oil,Emami,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8901248270298,Emami Healthy & Tasty Mustard Oil,Emami Healthy & Tasty,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8901262030243,Amul gee,Amul,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8901709011552,Priya Refined Sunflower Oil,Priya,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8903363001726,Refined Sunflower Oil,Dmart,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8904132918351,Get real Coconut Oil,Get Real,Fruits,900.0,100.0,0.0,0.0,True,True,False,False,3
+8904281903888,Physically Refined Rice Bran Oil,Unknown,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,5
+8904422706361,Patanjali Kachi Ghani Mustard Oil 2 Ltr,Patanjali,Fats,900.0,99.9,0.0,0.0098,True,True,False,False,5
+8904482000362,Mustard Oil,Hamdard,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8905082000752,Coconut Oil,KLF Coconad,Unclassified,900.0,99.9,0.0,0.0,True,True,False,False,3
+8905604001199,Groundnut oil,Jivo,Oils,900.0,100.0,0.0,0.0,True,True,False,False,4
+8905604002059,Jivo Rice Bran Oil,Jivo,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,3
+8905604003292,cold pressed groundnut oil,Jivo,Oils,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906001023043,Gowardhan pure cow ghee 500ml,Gowardhan,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906002660704,Coconad Edible Coconut Oil,KLF ([removed],Fruits,900.0,99.9,0.0,0.0,True,True,False,False,2
+8906004620751,Refined Ricebran Oil,Dhara Life,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906006330054,Gemini refined sunflower oil,Unknown,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906006330269,Gemini,Cargill,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906006330436,Gemini vanaspati,Gemini,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906007280037,Fortune Soya Health Refined Oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,7
+8906007280105,Fortune Refined Soyabean Oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906007280235,Fortune sun lite refined sunflower oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,7
+8906007280272,Fortune Sunlite Refined Sunflower Oil,Unknown,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906007280280,Fortune Refined Sunflower Oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,8
+8906007280693,Rice Bran Oil,Fortune,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906007280945,Mustard Oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,2
+8906007280969,Fortune Premium Kachi Ghani Pure Mustard Oil,AWL Agri Business Limited,Dressings and sauces,900.0,100.0,0.0,0.0,True,True,False,False,2
+8906007281089,Filtered Groundnut Oil,Unknown,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,6
+8906007281980,Multi source oil,Fortune,Oil,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906007284097,King's soyabean oil,King's,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906007286978,Refined Sunflower Oil,Aadhar,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906008811391,Mustard Oil,King's,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906008814385,Raaa gold ( R.oil ),Unknown,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906008818611,Soya health refined soyabean oil,Fortune,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906008819502,Refined Soyabean Oil,Fortune,Oils,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906010261078,Refined Sunflower Oil,Gold winner kaleesuwari,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906010265403,Filtered Groundnut Oil,Cardia Advanced,Fats,900.0,100.0,0.0,0.0,True,True,False,False,7
+8906010268602,Cold Pressed Gingelly Oil,Cardia Advanced,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,6
+8906014643016,Gagan Vansaspati,Bunge,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906020960053,Refined Oil,Vimal,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906031311424,Rice bran oil,Lite House,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906032010296,Mahakosh Refined Soyabean Oil,Mahakosh,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906035030017,Refined Palmolein Oil,First Klass,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8906035030222,Freedom Refined Sunflower Oil,Freedom,Fats,900.0,99.99,0.0,0.0,True,True,False,False,4
+8906035030826,Rice Bran Oil,Freedom,Unclassified,900.0,99.99,0.0,0.0,True,True,False,False,4
+8906104694652,Cold Pressed Rice Bran Oil,Zama,Cereals,900.0,100.0,0.9,0.013,True,True,False,False,9
+8906136780927,Black Sesame Oil,Anveshan,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,5
+8906136781856,Extra Virgin Olive Oil,Anveshan,Fats,900.0,100.0,0.0,0.0,True,True,False,False,6
+8906137050111,Ghee,Milma,Fats,900.0,99.7,0.0,0.0,True,True,False,False,4
+8906168970525,ABIS GOLD,ABIS,Oils,900.0,100.0,0.0,0.0,True,True,False,False,6
+8906180180506,Rice Bran Oil,Galway,Cereals,900.0,100.0,0.0,0.0,True,True,False,False,4
+8908000258211,Jivo Olive Oil,Jivo,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8908000258235,Sunflower oil,Jivo,Fats,900.0,100.0,0.0,0.0,True,True,False,False,3
+8908000258365,Cold pressed sunflower oil,Jivo,Fats,900.0,100.0,0.0,0.0,True,True,False,False,8
+8908000502017,Sunpure Sunflower oil,Sunpure,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8908000502147,Sunpure Physically Refined Sunflower Oil,Sunpure,Fats,900.0,100.0,0.0,0.0,True,True,False,False,7
+8908000502864,Sunpure Kachi Ghani Mustard Oil,Sunpure,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8908002396010,Refined Sunflower Oil,Mr. GOLD,Fats,900.0,100.0,0.0,0.0,True,True,False,False,4
+8908002396973,Gingelly Oil,Mr. Gold,Oils,900.0,100.0,0.0,0.0,True,True,False,False,6
+8908003718439,Groundnut Oil,Gem's Gold,Oils,900.0,99.07,0.0,1.15,True,True,False,True,7
+8908007766030,Train Marka Mustard Oil,Train Marka,Dressings and sauces,900.0,100.0,0.0,0.0,True,True,False,False,5
+8908021450182,Shanti mustatd oil,Shanti,Fats,900.0,100.0,0.0,0.0,True,True,False,False,5
+8908025684439,Pure Coconut Oil,Karikku,Fruits,900.0,100.0,0.0,0.0,True,True,False,False,3
+8939135663632,"Refined Soyabean oil, Refined Pamoline oil, Refined Sunflower oil, Refined Mustard oil,",Swadful,Unclassified,900.0,100.0,0.0,0.0,True,True,False,False,4
+8906159662163,Cold-Pressed Groundnut Oil,DeHaat,Fats,899.73,99.97,0.0,0.0,True,True,False,False,5
+8904422710894,Refined Sunflower Oil,Sunrich,Fats,899.35,99.93,0.0,0.0,True,True,False,False,4
+8906002663316,Tilnad Gingelly oil,KLF,Unclassified,899.1,99.9,0.0,0.0,True,True,False,False,3
+8906016414058,Ghee,Godrej,Milk and yogurt,899.1,99.9,0.0,0.00125,True,True,False,False,6
+8901207039577,Groundnut Oil (Cold Pressed),Dabur,Fats,899.0,99.9,0.0,0.0,True,True,False,False,6
+8904256726139,sesame edible cooking oil,big basket royal organic,Cereals,899.0,99.98,0.0,0.0,True,True,False,False,4
+8906055442586,Organic Coconut oil,Organic Tattva,Fruits,899.0,100.0,0.0,0.0,True,True,False,False,4
+8906066854187,Nature Land Organics Pure Kachi Ghani Mustard Oil Cold Pressed,Unknown,Unclassified,899.0,100.0,0.0,0.0,True,True,False,False,4
+8931207110853,Agmark Wood Cold Pressed Sesame Oil,Nature Way,Cereals,899.0,99.9,0.0,0.0,True,True,False,False,6
+8906056450320,Danedar Ghee,Sonai,Fats,898.92,99.88,0.0,0.0,True,True,False,False,6
+8904293707948,Classic Kachi Ghani Mustard Oil,Flipkart Grocery,Fats,898.56,99.84,0.0,0.00405,True,True,False,False,5
+8906082524248,Organic Cow Ghee,Unknown,Unclassified,898.53,99.84,0.0,0.0,True,True,False,False,4
+8904422712089,Rice Bran oil,Patanjali,Cereals,898.47,99.83,0.0,0.0,True,True,False,False,3
+8903363007155,Coconut Oil,Coco Nourish,Fruits,898.2,99.8,0.0,0.0,True,True,False,False,3
+8904083301813,Cow Ghee,Milky Mist,Fats,898.2,99.8,0.0,0.015,True,True,False,False,4
+8904083301837,Ghee,Milky Mist,Fats,898.2,99.8,0.0,0.005076,True,True,False,False,4
+8901052011865,Extra Virgin Avocado Oil Spray,TATA,Unclassified,898.0,99.8,0.0,0.0,True,True,False,False,4
+8904043906928,Tata Simply Better Cold Pressed Groundnut Oil,Simply Better,Oils,898.0,99.8,0.0,0.00125,True,True,False,False,9
+8904043907680,Virgin Coconut Oil,Tata Simply Better,Unclassified,898.0,99.8,0.0,0.00125,True,True,False,False,4
+8904083300809,Cow Ghee,Milky Mist,Fats,898.0,99.8,0.0,0.015,True,True,False,False,3
+8904083301158,MilkyMist Cow Ghee,Milky Mist,Fats,898.0,99.8,0.0,15.0,True,True,False,True,5

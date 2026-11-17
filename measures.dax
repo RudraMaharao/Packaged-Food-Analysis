@@ -1,0 +1,45 @@
+-- Table name in Power BI: Products
+Total Products = COUNTROWS(Products)
+
+Raw Usable Products = CALCULATE([Total Products], Products[raw_usable] = TRUE())
+
+Raw Usable % = DIVIDE([Raw Usable Products], [Total Products])
+
+Normalized Usable Products = CALCULATE([Total Products], Products[normalized_usable] = TRUE())
+
+Normalized Usable % = DIVIDE([Normalized Usable Products], [Total Products])
+
+Screen Eligible Products = CALCULATE([Total Products], Products[hfss_screen_eligible] = TRUE())
+
+Screen Coverage % = DIVIDE([Screen Eligible Products], [Total Products])
+
+Flagged Products = CALCULATE([Total Products], Products[hfss_screen_status] = "Flagged")
+
+Flagged % of Eligible = DIVIDE([Flagged Products], [Screen Eligible Products])
+
+Within Proxy Thresholds = CALCULATE([Total Products], Products[hfss_screen_status] = "Within proxy thresholds")
+
+Insufficient Data Products = CALCULATE([Total Products], Products[hfss_screen_status] = "Insufficient data")
+
+Average Energy (kcal per 100) = AVERAGE(Products[energy_kcal_clean])
+
+Average Total Fat (g per 100) = AVERAGE(Products[fat])
+
+Average Total Sugar (g per 100) = AVERAGE(Products[sugars])
+
+Average Salt (g per 100) = AVERAGE(Products[salt_g])
+
+Energy Threshold Exceeded = CALCULATE([Total Products], Products[high_energy] = TRUE())
+
+Fat Proxy Threshold Exceeded = CALCULATE([Total Products], Products[high_fat_proxy] = TRUE())
+
+Sugar Proxy Threshold Exceeded = CALCULATE([Total Products], Products[high_sugar_proxy] = TRUE())
+
+Salt Threshold Exceeded = CALCULATE([Total Products], Products[high_salt] = TRUE())
+
+Brands = DISTINCTCOUNT(Products[brands])
+
+Products With Quality Flags = CALCULATE([Total Products], Products[quality_flags] > 0)
+
+-- Use these measures with category or brand on chart axes. Always show coverage
+-- beside flagged rates, since missing nutrition is substantial.

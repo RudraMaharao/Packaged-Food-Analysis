@@ -1,0 +1,21 @@
+﻿products,nutriscore_grade,hfss_screen_status
+354,A,Flagged
+216,A,Insufficient data
+65,A,Within proxy thresholds
+233,B,Flagged
+169,B,Insufficient data
+74,B,Within proxy thresholds
+617,C,Flagged
+239,C,Insufficient data
+24,C,Within proxy thresholds
+718,D,Flagged
+222,D,Insufficient data
+1,D,Within proxy thresholds
+1896,E,Flagged
+681,E,Insufficient data
+271,NOT-APPLICABLE,Flagged
+1022,NOT-APPLICABLE,Insufficient data
+24,NOT-APPLICABLE,Within proxy thresholds
+2096,UNKNOWN,Flagged
+16205,UNKNOWN,Insufficient data
+82,UNKNOWN,Within proxy thresholds
