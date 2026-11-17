@@ -4,6 +4,25 @@ Reproducible analysis of **25,209 India-tagged products** from the Open Food Fac
 
 **Start here:** [interactive Power BI report](https://app.powerbi.com/groups/me/reports/81154722-4843-4b7f-8450-4bd92a2afa2c/a87cf5130da9a7606572?experience=power-bi) · [workflow diagram and CI](WORKFLOW.md) · [validation record](VALIDATION.md).
 
+## Power BI pages
+
+These captures show the saved Power BI report at the full-snapshot filter state. The live report supports food-group slicers and cross-filtering.
+
+<a id="page1"></a>
+### Page 1 · Overview
+
+![Overview page with KPI cards, food-group chart, ratings donut, and product table](screenshots/1.png)
+
+<a id="page2"></a>
+### Page 2 · Label data gaps
+
+![Label data gaps page with coverage cards, availability donut, and drink-versus-solid comparison](screenshots/2.png)
+
+<a id="page3"></a>
+### Page 3 · Read the label
+
+![Read the label page with screening cards, outcomes donut, food-form comparison, and awareness note](screenshots/3.png)
+
 ## Workflow at a glance
 
 ```mermaid
@@ -87,22 +106,3 @@ To rebuild the model in another Power BI workspace, create a Blank Query and pas
 ## Source and licence
 
 Data: Open Food Facts contributors, ODbL 1.0, via PackSense's India snapshot. The redistributed source and transformed CSVs remain under ODbL 1.0. The snapshot is crowd sourced and not independently verified against packaging. See the [PackSense dataset card](https://huggingface.co/datasets/PackSense/packsense-india) and [Open Food Facts API and reuse documentation](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/).
-
-## Power BI page screenshots
-
-These captures show the saved Power BI report at the full-snapshot filter state. The live report supports food-group slicers and cross-filtering.
-
-<a id="page1"></a>
-### Page 1 · Overview
-
-![Overview page with KPI cards, food-group chart, ratings donut, and product table](screenshots/1.png)
-
-<a id="page2"></a>
-### Page 2 · Label data gaps
-
-![Label data gaps page with coverage cards, availability donut, and drink-versus-solid comparison](screenshots/2.png)
-
-<a id="page3"></a>
-### Page 3 · Read the label
-
-![Read the label page with screening cards, outcomes donut, food-form comparison, and awareness note](screenshots/3.png)
