@@ -4,6 +4,32 @@ Reproducible analysis of **25,209 India-tagged products** from the Open Food Fac
 
 **Start here:** [interactive Power BI report](https://app.powerbi.com/groups/me/reports/81154722-4843-4b7f-8450-4bd92a2afa2c/a87cf5130da9a7606572?experience=power-bi) · [workflow diagram and CI](WORKFLOW.md) · [validation record](VALIDATION.md).
 
+## Workflow at a glance
+
+```mermaid
+flowchart LR
+    A[Open Food Facts / PackSense<br/>25,209 India-tagged products] --> B[Check source hash<br/>and unique barcodes]
+    B --> C[Python cleaning<br/>units, missing values, screening fields]
+    C --> D[(MongoDB<br/>raw + cleaned collections)]
+    D --> E{Six aggregation pipelines}
+    E --> F[Quality, categories, brands,<br/>screen drivers, ratings, review queue]
+    C --> G[Power BI-ready product export]
+    F --> H[Aggregate CSV exports]
+    G --> I[Power Query + DAX]
+    H --> I
+    I --> J[Interactive report<br/>Overview · Label Data Gaps · Read the Label]
+    D --> K[Automated validation]
+    G --> K
+    H --> K
+    L[GitHub Actions<br/>push / pull request / manual] --> C
+    L --> K
+    K --> M{Checks pass?}
+    M -->|yes| N[Verified analysis artifacts]
+    M -->|no| O[Fail workflow for review]
+```
+
+The executable steps and trigger details are in [WORKFLOW.md](WORKFLOW.md) and [the GitHub Actions workflow](.github/workflows/verify.yml).
+
 ## Verified results
 
 | Measure | Count | Share of all products |
